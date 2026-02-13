@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+background: linear-gradient(to right, #ff416c, #ff4b2b);
+  text-align: center;
+  color: rgb(220, 37, 37);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  top: 50px;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.yes {
+  background: #00ff88;
+  color: black;
+}
+
+.no {
+  background: #ff3333;
+  color: white;
+}
+
+#finalMessage {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hearts::before {
+  content: "💖 💕 💘 💝 💗 💓";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  animation: fall 6s linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -50px; }
+  100% { top: 100%; }
+}
